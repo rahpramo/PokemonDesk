@@ -1,0 +1,104 @@
+$small: 700px;
+$medium: 900px;
+
+.detailspage {
+    .content{
+        display: flex !important;
+        flex-direction: row !important;
+        background-color: #DEEDED !important;
+        box-shadow: -10px 4px 130px #2E3156;
+        @media screen and (max-width: $small) {
+            display: block !important;
+          }
+        .description{
+            width:100%;
+            height: 100%;
+            overflow-y: scroll;
+            word-wrap: break-word;
+        }
+    }
+    .ui.centered.card{
+        margin: 0px 21px !important;
+    }
+    .verticaldivider{
+        height: 30px;
+        border-left: 1px solid #5D5F7E;
+        width: 0px !important;
+        padding-right: 0px;
+    }
+    .detailsHeader{
+        justify-content: space-between;
+        align-items: flex-start;
+        font-weight: 800;
+        font-size: 30px;
+        display: none;
+        @media screen and (min-width: $small) {
+            display: flex;
+          }
+        .icon{
+            cursor: pointer;
+        }
+    }
+    .mobileHeader{
+        display: none;
+        @media screen and (max-width: $small) {
+            display: grid;
+            grid-template-columns: 1fr 50px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: 800;
+            font-size: 30px;
+          }
+    }
+    .displayImg{
+        @media screen and (max-width: $small) {
+            float: left;
+        }
+    }
+    .footerData{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #DEEDED !important;
+        row-gap: 40px;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 35px;
+        text-transform: capitalize;
+        width:100%;
+        overflow: auto;
+        @media screen and (max-width: $small) {
+            float:left;
+            grid-template-columns: 1fr 1fr;
+          }
+        div{
+            margin-top: 10px;
+        }
+        span{
+            background: transparent;
+            width: 70px;
+            height: 24px;
+            border-radius: 5px;
+            margin-right: 5px;
+            
+        }
+    }
+}
+.readmorePopup{
+    height: 30%;
+    background: #2E3156;
+    box-shadow: 0px 4px 20px #2E3156;
+    border-radius: 8px;
+    color:#fff;
+    max-width: calc(100% - 40px);
+    overflow: auto;
+    position: fixed;
+    left: 20px;
+    padding:20px;
+}
+.clicktoreadmoreBtn{
+    color:#000;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+}

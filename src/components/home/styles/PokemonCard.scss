@@ -1,0 +1,37 @@
+.ui.card{
+    box-sizing: border-box;
+    width: 194px;
+    height: 277px;
+    border: 1px dashed #2E3156;
+    border-radius: 8px;
+    margin:20px 21px !important;
+    text-align: center;
+    cursor: pointer;
+
+    .pokemonimage{
+        width: 150px;
+        margin: auto;
+        padding-top: 20px;
+        background: none;
+        img{
+            width:100%;
+            height: 160px !important;
+        }
+    }
+    .content {
+        border:none;
+        .header{
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+            color: #2E3156;
+        }
+        .meta{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #2E3156;
+        }
+    }
+}

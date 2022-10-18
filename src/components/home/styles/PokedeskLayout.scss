@@ -1,0 +1,83 @@
+
+$small: 700px;
+$medium: 900px;
+
+.ui.grid.headercontainer{
+    height: 100%;
+    .row{
+        align-items: center;
+        justify-content:flex-start;
+    }
+    .header{
+        font-weight: 700;
+        font-size: 30px;
+        color: #2E3156;
+        width:168px !important;
+    }
+    .headerdescription{
+        height: 23px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #5D5F7E;
+        width:450px !important;
+    }
+    .verticaldivider{
+        height: 30px;
+        border-left: 1px solid #5D5F7E;
+        @media screen and (max-width: $small) {
+            height:20px !important;
+            border-top:1px solid #5D5F7E;
+            border-left: 0 !important;
+            margin-top: 20px;
+          }
+        @media screen and (min-width: $small) {
+            width:0px !important;
+            padding-right: 0px;
+          }
+    }
+    div.label{
+        color: #5D5F7E;
+        font-size: 16px;
+    }
+    .searchbox{
+        input{
+            border-radius: 8px;
+            width:100%;
+            height: 57px;
+              background: #C9DDE2;
+        }
+        .prompt{
+            border-radius: 8px;
+        }
+    }
+    .responsivedropdown{
+        display: block;
+        max-width: 230px;
+        @media screen and (max-width: $small) {
+            display: none;
+          }  
+    }
+    .hamburgermenu{
+        display: none;
+        @media screen and (max-width: $small) {
+            display: block;
+          }  
+    }
+}
+
+.ui.grid.headercontainer .rowone div{
+  @media screen and (max-width: $small) {
+    min-width:100% !important;
+  }
+}
+
+.ui.grid.headercontainer .rowtwo div:first-child{
+    @media screen and (max-width: $small) {
+      min-width:87.5% !important;
+    }
+  }
+  
+  #scrollableDiv{
+    height: calc(100% - 170px);
+    overflow-y: scroll;
+  }
